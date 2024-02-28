@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import { notification } from "~~/utils/scaffold-eth";
 import scaffoldConfig from "~~/scaffold.config";
 import BigNumber from "bignumber.js";
-
+export const runtime = 'edge';
 
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();

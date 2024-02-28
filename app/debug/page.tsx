@@ -6,6 +6,7 @@ export const metadata = getMetadata({
   title: "Debug Contracts",
   description: "Debug your deployed 🏗 Scaffold-ETH 2 contracts in an easy way",
 });
+export const runtime = 'edge';
 
 const Debug: NextPage = () => {
   return (
