@@ -41,11 +41,11 @@ const Home: NextPage = () => {
   useEffect(()=>{
     const fetchData =  () => {
       try {
-        const url = "/api/playerwon"
+        const url = "http://3.113.14.129:3000/api/playerwon";
         fetch(url).then(async(res)=>{
           const data = await res.json();
           console.log(data.count);
-          setPlayerwonCount(data.count)
+          setPlayerwonCount(data.count);
         })
         
       } catch (error) {
